@@ -1,6 +1,6 @@
 ﻿namespace Catalog.API.Models
 {
-    public class Catalog
+    public class CatalogItem
     {
         public int Id { get; private set; }
 
@@ -16,7 +16,7 @@
 
         public CatalogBrand CatalogBrand { get; private set; }
 
-        public Catalog(string name, string description, string pictureFileName, decimal price, CatalogType catalogType, CatalogBrand catalogBrand)
+        public CatalogItem(string name, string description, string pictureFileName, decimal price, CatalogType catalogType, CatalogBrand catalogBrand)
         {
             Name = name;
             Description = description;
